@@ -1,0 +1,29 @@
+GET http://192.168.18.213:4011/api/product/
+
+###
+GET http://192.168.18.213:4011/api/product/9063ba06-fc2b-4b55-860b-96726d544508
+
+###
+POST http://192.168.18.213:4011/api/product/
+Content-Type: application/json
+
+{
+    "nameProduct": "Kacang Almond",
+    "price": 15000,
+    "expired": "1997-07-16T19:20:30.451Z",
+    "userId": "1f6e7af8-d474-4619-8d6c-b7dec1e277d6"
+}
+
+###
+PATCH http://192.168.18.213:4011/api/product/be6be2cb-12c5-4ca8-9931-cf78828ff9ce
+Content-Type: application/json
+
+{
+    "nameProduct": "Durian",
+    "price": 15000,
+    "expired": "1997-07-16T19:20:30.451Z",
+    "userId": "1f6e7af8-d474-4619-8d6c-b7dec1e277d6"
+}
+
+###
+DELETE  http://192.168.18.213:4011/api/product/be6be2cb-12c5-4ca8-9931-cf78828ff9ce
